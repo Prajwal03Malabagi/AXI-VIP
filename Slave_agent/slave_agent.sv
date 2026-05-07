@@ -16,11 +16,11 @@ class slave_agent extends uvm_agent;
 		if(cf.is_active)
 		begin
 			drv=driver::type_id::create("drv",this);
-			sqr=seqr_s::type_id::create("sqr",this);
+		//	sqr=seqr_s::type_id::create("sqr",this);
 		end
 	endfunction
 	
-	function void connect_phase(uvm_phase phase);
+	/*function void connect_phase(uvm_phase phase);
 		drv.seq_item_port.connect(sqr.seq_item_export);
-	endfunction
+	endfunction*/
 endclass
